@@ -1,0 +1,122 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 15%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.personality-selection {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.personality-selection select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* वॉयस से भेजें बटन की स्टाइल */
+#voice-btn {
+    width: 15%;
+    padding: 10px;
+    margin-left: 5px; /* थोड़ा अंतर बनाने के लिए */
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* टेक्स्ट का आकार बड़ा करें */
+}
+
+#voice-btn:hover {
+    background-color: #1976D2;
+}
+/* दोनों बटन की समान स्टाइल */
+button {
+    width: 15%;
+    padding: 10px;
+    margin-left: 5px; /* थोड़ा अंतर रखने के लिए */
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* चैटबॉट के जवाब के लिए बैकग्राउंड */
+.chat-box div:nth-child(odd) {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.chat-box div:nth-child(even) {
+    background-color: #e6f7ff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: right;
+}
